@@ -1,30 +1,32 @@
-import Container from "../Container/Container";
 import { styled, Typography } from "@mui/material";
 import { TwitterIcon } from "../Icons/TwitterIcon";
 import { FacebookIcon } from "../Icons/FacebookIcon";
 import { InstaIcon } from "../Icons/InstaIcon";
+import Container from "../Container/Container.tsx";
 
 const Header = () => {
     return (
-        <Wrapper>
-            <Info>
-                <PageText>
-                    About
-                </PageText>
-                <PageText>
-                    Pricing
-                </PageText>
-                <PageText>
-                    Contacts
-                </PageText>
-            </Info>
-            <Logo src="/images/Logo.png" />
-            <Credentials>
-                <TwitterIcon />
-                <FacebookIcon />
-                <InstaIcon />
-            </Credentials>
-        </Wrapper>
+        <Container>
+            <Wrapper>
+                <Info>
+                    <PageText>
+                        About
+                    </PageText>
+                    <PageText>
+                        Pricing
+                    </PageText>
+                    <PageText>
+                        Contacts
+                    </PageText>
+                </Info>
+                <Logo src="/images/Logo.png" />
+                <Credentials>
+                    <TwitterIcon />
+                    <FacebookIcon />
+                    <InstaIcon />
+                </Credentials>
+            </Wrapper>
+        </Container>
     );
 };
 
@@ -33,7 +35,6 @@ const Wrapper = styled('div')({
     width: '100%',
     justifyContent: 'space-between',
     padding: '37px 0px',
-    alignItems: 'center'
 });
 
 const Info = styled('div')({
@@ -51,8 +52,8 @@ const PageText = styled(Typography)({
 
 const Logo = styled('img')({
     cursor: 'pointer',
-    width: '127px',
-    height: '20px'
+    maxWidth: '127px',
+    maxHeight: '20px'
 });
 
 const Credentials = styled('div')({

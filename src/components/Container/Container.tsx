@@ -7,7 +7,7 @@ interface Props {
     id?: string;
 }
 
-const Container:FC<Props> = ({children, style, id}) => {
+const Container: FC<Props> = ({ children, style, id }) => {
     return (
         <Wrapper style={style} id={id}>
             {children}
@@ -20,8 +20,8 @@ const Wrapper = styled('div')({
     flexDirection: 'column',
     width: '100%',
     maxWidth: '1160px',
+    background: 'white',
     justifyContent: 'center',
-    background: 'white'
 });
 
 export default Container;
