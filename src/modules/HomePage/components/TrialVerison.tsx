@@ -1,36 +1,39 @@
 import { styled, Typography } from "@mui/material";
 import Container from "../../../components/Container/Container";
 import Button from "../../../components/Button/Button";
+import Section from "../../../components/Section/section.tsx";
 
 const TrialVersion = () => {
     return (
         <Container>
-            <Wrapper>
-                <SubWrapper>
-                    <TitleText>
-                        Ac cras eu, nisl dui pulvinar malesuada est eget quam vitae ciras fames fermentum
-                    </TitleText>
-                </SubWrapper>
-                <TextWrapper>
-                    <InfoWrapper>
-                        <TextSubWrapper>
-                            <Text>
-                                Ac cras eu, nisl dui pulvinar malesuada fermentum est eget quam vitae cras fames fermentum
-                            </Text>
-                        </TextSubWrapper>
-                        <TextSubWrapper>
-                            <Text>
-                                Ac cras eu, nisl dui pulvinar malesuada fermentum est eget quam vitae cras fames fermentum
-                            </Text>
-                        </TextSubWrapper>
-                    </InfoWrapper>
-                    <ButtonWrapper>
-                        <Button>
-                            Try it for free
-                        </Button>
-                    </ButtonWrapper>
-                </TextWrapper>
-            </Wrapper>
+            <Section isWithPadding={true}>
+                <Wrapper>
+                    <SubWrapper>
+                        <TitleText>
+                            Ac cras eu, nisl dui pulvinar malesuada est eget quam vitae ciras fames fermentum
+                        </TitleText>
+                    </SubWrapper>
+                    <TextWrapper>
+                        <InfoWrapper>
+                            <TextSubWrapper>
+                                <Text>
+                                    Ac cras eu, nisl dui pulvinar malesuada fermentum est eget quam vitae cras fames fermentum
+                                </Text>
+                            </TextSubWrapper>
+                            <TextSubWrapper>
+                                <Text>
+                                    Ac cras eu, nisl dui pulvinar malesuada fermentum est eget quam vitae cras fames fermentum
+                                </Text>
+                            </TextSubWrapper>
+                        </InfoWrapper>
+                        <ButtonWrapper>
+                            <Button>
+                                Try it for free
+                            </Button>
+                        </ButtonWrapper>
+                    </TextWrapper>
+                </Wrapper>
+            </Section>
         </Container>
     );
 };
@@ -39,7 +42,6 @@ const Wrapper = styled('div')({
     display: 'flex',
     flexDirection: 'column',
     width: '100%',
-    padding: '90px 0',
     gap: '70px',
 });
 

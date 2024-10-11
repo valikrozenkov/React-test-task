@@ -1,55 +1,57 @@
 import { styled, Typography } from "@mui/material";
 import Container from "../../../components/Container/Container";
+import Section from "../../../components/Section/section";
 
 const ImpactsInNumber = () => {
     return (
         <Container>
-            <Wrapper>
-
-                <WrapperTitleText>
-                    <TitleText>
-                        See our impacts in number
-                    </TitleText>
-                </WrapperTitleText>
-                <SubWrapper>
-                    <StatWrapper>
-                        <TextWrapper>
-                            <Text>
-                                People
-                            </Text>
-                        </TextWrapper>
-                        <CountWrapper>
-                            <Count>
-                                200+
-                            </Count>
-                        </CountWrapper>
-                    </StatWrapper>
-                    <StatWrapper>
-                        <TextWrapper>
-                            <Text>
-                                Our users the world
-                            </Text>
-                        </TextWrapper>
-                        <CountWrapper>
-                            <Count>
-                                50K
-                            </Count>
-                        </CountWrapper>
-                    </StatWrapper>
-                    <StatWrapper>
-                        <TextWrapper>
-                            <Text>
-                                Succesfull projects
-                            </Text>
-                        </TextWrapper>
-                        <CountWrapper>
-                            <Count>
-                                100%
-                            </Count>
-                        </CountWrapper>
-                    </StatWrapper>
-                </SubWrapper>
-            </Wrapper>
+            <Section isWithPadding={true}>
+                <Wrapper>
+                    <WrapperTitleText>
+                        <TitleText>
+                            See our impacts in number
+                        </TitleText>
+                    </WrapperTitleText>
+                    <SubWrapper>
+                        <StatWrapper>
+                            <TextWrapper>
+                                <Text>
+                                    People
+                                </Text>
+                            </TextWrapper>
+                            <CountWrapper>
+                                <Count>
+                                    200+
+                                </Count>
+                            </CountWrapper>
+                        </StatWrapper>
+                        <StatWrapper>
+                            <TextWrapper>
+                                <Text>
+                                    Our users the world
+                                </Text>
+                            </TextWrapper>
+                            <CountWrapper>
+                                <Count>
+                                    50K
+                                </Count>
+                            </CountWrapper>
+                        </StatWrapper>
+                        <StatWrapper>
+                            <TextWrapper>
+                                <Text>
+                                    Succesfull projects
+                                </Text>
+                            </TextWrapper>
+                            <CountWrapper>
+                                <Count>
+                                    100%
+                                </Count>
+                            </CountWrapper>
+                        </StatWrapper>
+                    </SubWrapper>
+                </Wrapper>
+            </Section>
         </Container>
     );
 };
@@ -58,6 +60,7 @@ const Wrapper = styled('div')({
     display: 'flex',
     width: '100%',
     flexDirection: 'column',
+    gap: '50px'
 });
 
 const SubWrapper = styled('div')({

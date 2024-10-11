@@ -1,23 +1,26 @@
 import { styled, Typography } from "@mui/material";
 import Container from "../../../components/Container/Container.tsx";
 import Button from "../../../components/Button/Button.tsx";
+import Section from "../../../components/Section/section.tsx";
 
 const Browser = () => {
     return (
         <Container>
-            <Wrapper>
-                <TextWrapper>
-                    <BrowserText>
-                        Manage expenses directly from Chrome
-                    </BrowserText>
-                </TextWrapper>
-                <Button>
-                    Get in touch
-                </Button>
-                <BrowserImgWrapper>
-                    <Image src="/images/Browser.png" />
-                </BrowserImgWrapper>
-            </Wrapper>
+            <Section>
+                <Wrapper>
+                    <TextWrapper>
+                        <BrowserText>
+                            Manage expenses directly from Chrome
+                        </BrowserText>
+                    </TextWrapper>
+                    <Button>
+                        Get in touch
+                    </Button>
+                    <BrowserImgWrapper>
+                        <Image src="/images/Browser.png" />
+                    </BrowserImgWrapper>
+                </Wrapper>
+            </Section>
         </Container>
     );
 };
@@ -30,7 +33,6 @@ const Wrapper = styled('div')({
     borderRadius: '30px',
     alignItems: 'center',
     gap: '36px',
-    marginBottom: '90px'
 });
 
 const TextWrapper = styled('div')({
